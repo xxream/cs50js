@@ -5,22 +5,21 @@ function hello(){
 let num= 0;
 function counter(){
     num++;
-    alert(num);
+    document.querySelector('h1').innerHTML = num;
 }
 
 function reset(){
     num =0;
-    alert("counter has been reseted");
+    document.querySelector('h1').innerHTML = num;
 } 
-let chax = true;
+
 function change_header(){
+   let headingx  = document.querySelector('h1');
    
-    if(chax===true){
-        document.querySelector('h1').innerHTML = "This is changed header tag";
-        chax = false;
+   if(headingx.innerHTML === "first header"){
+        headingx.innerHTML = "second header";
     }else{
-        document.querySelector('h1').innerHTML = "This header tag is changed again";
-        chax= true;
+        headingx.innerHTML = "first header"; 
     }
     
 }
