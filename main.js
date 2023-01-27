@@ -6,6 +6,9 @@ let num= 0;
 function counter(){
     num++;
     document.querySelector('h1').innerHTML = num;
+    if(num%10===0){
+        alert(`the count is ${num}`);
+    }
 }
 
 function reset(){
