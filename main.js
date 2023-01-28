@@ -26,3 +26,15 @@ function change_header(){
     }
     
 }
+let increx = 0;
+function increment(){
+    let countxx =document.querySelector('h2');
+    increx++;
+    countxx.innerHTML= increx;
+}
+
+function decrement(){
+    let countxx =document.querySelector('h2');
+    increx--;
+    countxx.innerHTML= increx; 
+}
